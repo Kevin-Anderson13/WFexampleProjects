@@ -1,0 +1,1 @@
+I couldn't get the two files to stop auto indenting the body and head back even with html tags.  I tried to turn off auto indent, but it wasn't working.  So I talked to ta_jonathan about it and he explained that it was not a super huge deal.  I know the stuff further in has the correct indentation or at least I thought it did.  So we should be good.  Thanks!

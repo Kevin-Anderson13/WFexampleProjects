@@ -1,0 +1,41 @@
+ <div id="header">
+        <img src="images/github.jpg" alt="Little github image">
+        <h1>Display our blocks!</h1>
+        <img src="images/catandninja.png" alt="hello cat and ninja image">
+    </div>
+
+    <div class="">
+        <p>
+            <img src="images/dojocat.jpg" alt="sword octocat image">
+            <img src="images/coder2.jpg" alt="little girl kitty image">
+            <img src="images/cherry.jpg" alt="cherry on top image">
+            <img src="images/aidorucat.png" alt="heart kitty">
+        </p>
+    </div>
+
+    <div class="">
+        <p>
+            <img src="images/heisencat.png" alt="old man cat">
+            <img src="images/riddlocat.png" alt="riddler cat">
+            <img src="images/oktobercat.png" alt="little beer cat">
+            <img src="images/domo-cat.png" alt="bongo cat image">
+        </p>
+    </div>
+
+    <div class="">
+        <p>
+            <img src="images/linkcat.png" alt="link cat image">
+            <img src="images/chellocat.jpg" alt="portal cat image">
+            <img src="images/mario.png" alt="mario cat image">
+            <img src="images/kantana.jpg" alt="katana cat image">
+        </p>
+    </div>
+
+    <div class="">
+        <p>
+            <img src="images/ironcat.png" alt="ironman cat image">
+            <img src="images/stormtroopocat.png" alt="storm trooper cat">
+            <img src="images/cooler.png" alt="my little kitty">
+            <img src="images/daftpunk.gif" alt="punk cat">
+        </p>
+    </div>

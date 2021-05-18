@@ -1,0 +1,200 @@
+* { outline: 0;
+    border: 0;
+	padding: 0;
+	margin: 0;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+#wrapper1 {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+}
+
+#wrapper1 h1 {
+    display: inline-block;
+    font-family: Itim;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 3px 0px 0px 25px;
+}
+
+#wrapper1 p {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper1 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p a {
+    color: black;
+}
+
+#wrapper1 ul li {
+    list-style: none;
+    padding: 20px 2px 2px 2px
+}
+
+#headerh2 {
+    display: inline-block;
+    font-size: 25px;
+    padding: 20px 0px 10px 320px;
+}
+
+#wrapper2 {
+    background-image: radial-gradient(#6F5964 10%, #1E0E12 90%);
+    margin: 10px;
+    min-height: 950px;
+}
+
+.hero {
+    width: 400px;
+    border: 4px #C0C0C0 solid;
+    margin: 20px 20px 20px 30px;
+}
+
+#about {
+    background-image: linear-gradient(to right, #FDFDFD , #DACBD9);
+    display: inline-block;
+    vertical-align: top;
+    width: 490px;
+    height: 270px;
+    margin: 20px 0px 0px 0px;
+}
+#about h2 {
+    background-image: linear-gradient(#B4B3B7, #878593, #B4B3B7);
+    width: 480px;
+    color: white;
+    padding: 5px;
+}
+
+#about p {
+    margin: 10px;
+    justify-content: left;
+    font-size: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content h2 {
+    background-image: linear-gradient(#B4B3B7, #878593, #B4B3B7);
+    width: 280px;
+    color: white;
+    padding: 5px;
+}
+
+.lamode {
+    background-image: linear-gradient(to right, #FDFDFD , #DACBD9);
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    min-height: 600px;
+    margin: 0px 0px 0px 0px;
+}
+
+.lamode h3{
+    margin-top: 50px;
+}
+
+.lamode p{
+    padding: 10px;
+}
+
+.contacts {
+    background-image: linear-gradient(to right, #FDFDFD , #DACBD9);
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    min-height: 600px;
+    margin: 0px 0px 0px 0px;
+}
+
+.contacts h3{
+    margin-top: 34px;
+}
+
+.contacts p{
+    padding: 10px;
+}
+
+.eleven {
+    background-image: linear-gradient(to right, #FDFDFD , #DACBD9);
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    min-height: 600px;
+    margin: 0px 0px 0px 0px;
+}
+
+.eleven p{
+    padding: 10px;
+}
+
+.content h3 {
+    background-image: linear-gradient(#B4B3B7, #878593, #B4B3B7);
+    width: 280px;
+    color: white;
+    padding: 5px;
+}
+
+img{
+    width: 290px;
+}
+
+.modelogos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactlogos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elevenlogos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.techlogos {
+    width: 50px;
+    padding: 4px;
+}
+
+button {
+    min-height: 20px;
+    border: 1px black solid;
+    background-color:#407D61;
+    border-radius: 8px;
+    margin: 15px 0px 0px 100px;
+    padding: 3px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.35), 0 6px 20px 0 rgba(0,0,0,0.3);
+}
+
+button {
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.footlogos {
+    width: 20px;
+    margin: 4px;
+}
+
+
+li a {
+    color: black;
+}
+
+p, a {
+    font-weight: 600;
+}
