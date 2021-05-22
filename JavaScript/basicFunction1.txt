@@ -1,0 +1,166 @@
+My Guesses Correct: 14
+Out of 15;
+*Just went too fast on one of them and didn't update the value of a for loop as I was going.
+
+
+function a() {
+    return 35;
+}
+console.log(a())
+My Guess: 35    Actual: 35
+
+
+
+function a(){
+    return 4;
+}
+console.log(a()+a());
+My Guess: 8    Actual: 8
+
+
+
+function a(b){
+    return b;
+}
+console.log(a(2)+a(4));
+My Guess: 6     Actual: 6
+
+
+function a(b){
+    console.log(b);
+    return b*3;
+}
+console.log(a(3));
+My Guess: 3, 9    Actual: 3, 9
+
+
+function a(b){
+   return b*4;
+   console.log(b);
+}
+console.log(a(10));
+My Guess: 40     Actual: 40
+//return happened early in function so console.log(b) never happened
+
+
+
+function a(b){
+    if(b<10) {
+        return 2;
+    }
+    else     {
+        return 4;
+    }
+    console.log(b);
+}
+console.log(a(15));
+My Guess: 4    Actual: 4
+
+
+
+function a(b,c){
+    return b*c;
+}
+console.log(10,3);
+console.log( a(3,10) );
+My Guess: 10 3, 30 Actual: 10 3(same Line), 30
+
+
+
+function a(b){
+    for(var i=0; i<10; i++){
+        console.log(i);
+    }
+    return i;
+}
+console.log(3);
+console.log(4);
+My Guess: 3, 4   Actual: 3, 4
+
+
+
+function a(){
+    for(var i=0; i<10; i++){
+        i = i +2;
+        console.log(i);
+    }
+}
+a();
+My Guess: 2,3,4,5,6,7,8,9,10,11
+Actual: 2,5,8,11
+//Didn't think on this one.  Even messed up on the T diagram.  Forgot that i holds it's value within the loop after the sum happens each loop.
+
+
+
+function a(b,c){
+    for(var i=b; i<c; i++) {
+       console.log(i);
+   }
+   return b*c;
+}
+a(0,10);
+console.log(a(0,10));
+My Guess: 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0
+Actual: 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0
+*When you console log a whole function instead of just calling a function from a var, it runs the whole function again.
+
+
+
+function a(){
+    for(var i=0; i<10; i++){
+       for(var j=0; j<10; j++){
+           console.log(j);
+       }
+       console.log(i);
+    }
+}
+My guess: nothing     Actual:  nothing
+*once again, two for loops in here, but the function is never called.
+
+
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(i,j);
+        }
+        console.log(j,i);
+    }
+}
+My Guess: no output(function never called)  Actual: same
+
+
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+console.log(z);
+My Guess: 10     Actual: 10
+*Function a() is never called and z is just defined above as 10.
+
+
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+a();
+console.log(z);
+My Guess: 15, 10    Actual: 15, 10
+*console.log inside the function runs first because it was called, then the z outside the function is logged in last line.
+
+
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
+}
+z = a();
+console.log(z);
+My Guess: 15, 15 Actual: 15, 15
+*z is logged in the function and then the function value of z is returned and updated in the original var z value.  So var z changes from 10 to 15.  So it logs two 15s.
