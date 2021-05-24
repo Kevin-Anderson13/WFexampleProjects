@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Intro to the DOM</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#hide_menu").click(function () {
+                $(".menu").hide("slow");
+            });
+            $("#show_menu").click(function () {
+                $(".menu").show("slow");
+            });
+            $("#toggle").click(function () {
+                $(".toggle").toggle();
+            });
+            $("#slide_up").click(function () {
+                $("#slide_p").slideUp("slow", function () {
+                });
+            });
+            $("#slide_down").click(function () {
+                $("#slide_p").slideDown("slow", function () {
+                });
+            });
+            $("#slide_toggle").click(function () {
+                $("#slide_T").slideToggle("slow", function () {
+                });
+            });
+            $("#fade_out").click(function () {
+                $("#fade_p").fadeOut("slow", function () {
+                });
+            });
+            $("#fade_in").click(function () {
+                $("#fade_p").fadeIn("slow", function () {
+                });
+            });
+            $("#add_class").click(function () {
+                $("p").last().addClass("selected");
+            });
+            $("#before_hello").click(function () {
+                $("#mid_content p").before("<b>Hello</b>");
+            });
+            $("#after_goodbye").click(function () {
+                $("#mid_content p").after("<b>Goodbye! Have a nice Day!</b>");
+            });
+            $("#append").click(function () {
+                $("#mid_content h4").append("I think this was a good choice to add this paragraph.  The text is amazing!");
+            });
+            $("#html").click(function () {
+                $("#html").html("<p>So interesting.  This replaces the text of whatever I say to put it in.  I just happened to put it in the text value of the button you just clicked on!</p>");
+            });
+            $("input")
+                .keyup(function () {
+                    var value = $(this).val();
+                    $("#input_reads").text(value);
+                })
+                .keyup();
+            $("#replace_button").click(function () {
+                $("#replace_text").text("That worked like a charm!");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 id="headline">JQuery Basic Assignment</h1>
+        <h2 id="subheadline">What I have learned at Coding Dojo!</h2>
+        <div id="main_nav">
+            <ul class="menu">
+                <li class="subtopics">HTML</li>
+                <li class="subtopics">CSS</li>
+                <li class="subtopics">JavaScript</li>
+                <li class="subtopics">Git</li>
+            </ul>
+        </div>
+        <button id="hide_menu">Hide Menu</button>
+        <button id="show_menu">Show Menu</button>
+        <div id="content_panel">
+            <div class="panel_child">
+                <h1>Toggle</h1>
+                <p class="toggle">You could read this Paragraph</p>
+                <p class="toggle hidden"> Or if you would prefer, you could read this one.</p>
+                <button id="toggle">Toggle</button>
+            </div>
+            <div class="panel_child">
+                <h1>Slide Down and Up</h1>
+                <p id="slide_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium voluptate velit
+                    adipisci
+                    architecto. Sequi exercitationem eveniet dolore, eaque recusandae est, tenetur, amet quisquam eius
+                    illum laudantium? Saepe voluptatibus perferendis a. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facilis dolor laudantium aspernatur, minima illo adipisci provident eveniet
+                    molestias quam. Perferendis pariatur voluptas quas cumque accusamus? Repellat neque voluptate fugiat
+                    illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate atque in
+                    repellendus quidem adipisci sequi suscipit debitis reprehenderit praesentium maxime ullam,
+                    perspiciatis repellat distinctio qui vero, consectetur magnam accusamus?</p>
+                <button id="slide_up">Hide Text</button>
+                <button id="slide_down">Show Text</button>
+            </div>
+            <div class="panel_child">
+                <h1>Slide Toggle</h1>
+                <p id="slide_T">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium voluptate velit
+                    adipisci
+                    architecto. Sequi exercitationem eveniet dolore, eaque recusandae est, tenetur, amet quisquam eius
+                    illum laudantium? Saepe voluptatibus perferendis a. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facilis dolor laudantium aspernatur, minima illo adipisci provident eveniet
+                    molestias quam. Perferendis pariatur voluptas quas cumque accusamus? Repellat neque voluptate fugiat
+                    illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate atque in
+                    repellendus quidem adipisci sequi suscipit debitis reprehenderit praesentium maxime ullam,
+                    perspiciatis repellat distinctio qui vero, consectetur magnam accusamus?</p>
+                <button id="slide_toggle">Hide/Show</button>
+            </div>
+            <div class="panel_child">
+                <h1>Fade In and Out</h1>
+                <p id="fade_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium voluptate velit
+                    adipisci
+                    architecto. Sequi exercitationem eveniet dolore, eaque recusandae est, tenetur, amet quisquam eius
+                    illum laudantium? Saepe voluptatibus perferendis a. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facilis dolor laudantium aspernatur, minima illo adipisci provident eveniet
+                    molestias quam. Perferendis pariatur voluptas quas cumque accusamus? Repellat neque voluptate fugiat
+                    illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate atque in
+                    repellendus quidem adipisci sequi suscipit debitis reprehenderit praesentium maxime ullam,
+                    perspiciatis repellat distinctio qui vero, consectetur magnam accusamus?</p>
+                <button id="fade_out">Hide Text</button>
+                <button id="fade_in">Show Text</button>
+                <button id="add_class">Add Class</button>
+            </div>
+        </div>
+        <div id="mid_content">
+            <h1>Fun JQuery commands to try!</h1>
+            <p>If you would like me to say hello, press the button under this message! I can say Hello to you as many
+                times as you would like!</p>
+            <button id="before_hello">Say Hi!</button>
+            <button id="after_goodbye">Goodbye!</button>
+            <h4>We could append more content to this line if you would like!</h4>
+            <button id="append">Show new content</button>
+        </div>
+        <div id="low_content">
+            <h1>The last few JQuery commands I can think of right now.</h1>
+            <p>Let's see if we can add a few more HTML items to this area.</p>
+            <button id="html">Add HTML stuff!</button>
+            <p>I might even let you type something into the page! Really what we are trying to do is Find or print out
+                the "value" of an input box! Woohoo. Go ahead and try to type something into the text field.</p>
+            <input type="text" value="some text">
+            <p id="input_reads"></p>
+            <p id="replace_text">Let's see if we can replace this text with something else. Click the button below this
+                text!</p>
+            <button id="replace_button">Replace</button>
+        </div>
+    </div>
+</body>
+
+</html>
