@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Disappearing Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").click(function () {
+                $(this).fadeOut("slow", function () {
+                });
+            });
+            $("#restore").click(function () {
+                $("img").show("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>JQuery Fun!</h1>
+        <h2> Click on the Ninjas to make them disappear!</h2>
+        <div id="ninjas_top">
+            <img src="ninja.png" alt="Picture of Ninja">
+            <img src="ninja.png" alt="Picture of Ninja">
+            <img src="ninja.png" alt="Picture of Ninja">
+            <img src="ninja.png" alt="Picture of Ninja">
+        </div>
+        <div id="ninjas_bottom">
+            <img src="ninja.png" alt="Picture of Ninja">
+            <img src="ninja.png" alt="Picture of Ninja">
+            <img src="ninja.png" alt="Picture of Ninja">
+            <img src="ninja.png" alt="Picture of Ninja">
+        </div>
+        <button id="restore">Restore the Images</button>
+    </div>
+</body>
+
+</html>
